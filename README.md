@@ -2,6 +2,7 @@
 ## Desenvolvimento de uma pagina com consumo de API`s do clima e de busca de CEP.
 
 🚀 Desafio - Desenvolva tela funcional com consumo de API
+
 📎 Arquivo do desafio:
 
 Você acaba de ser recrutado como o mais novo desenvolvedor em uma startup inovadora chamada "DncWeather".
@@ -11,7 +12,7 @@ a acessar informações críticas sobre endereços e previsões meteorológicas 
 
 ### 📌 Dados de acesso
 
-Link do site disponibilizado: [Clique aqui para acessar a Landing page](https://consumodeapi-dncweather.netlify.app)
+Link do site disponibilizado: [Clique aqui para acessar a DncWeather](https://consumodeapi-dncweather.netlify.app)
 
 
 
