@@ -35,79 +35,78 @@
    </section>
 
 <!-- FORMULARIO -->
-   <div class="cx-form">
-      <form>
+   <div class="form-group">
+      <form id="infoForm">
          <div class="label-form">
             <label for="pri-nome"> Primeiro Nome: </label>
-            <input type="text" id="pri-nome" placeholder="Insira seu primeiro nome">
+            <input type="text" class="form-control" id="pri-nome" placeholder="Insira seu primeiro nome">
          </div>
          <div class="label-form">
             <label for="email"> E-mail: </label>
-            <input type="email" id="email" placeholder="Insira seu email: seu@email.com">
+            <input type="email" class="form-control" id="email" placeholder="Insira seu email: seu@email.com">
          </div>
          <div class="label-form">
             <label for="cep"> Digite o CEP: </label>
-            <input type="number" id="cep" placeholder="Insira o CEP de busca">
+            <input type="number" class="form-control" id="cepInput" placeholder="Insira o CEP de busca">
          </div>
          <div class="label-form">
             <label for="coordenadas"> Digite a latitude e longitude para saber a previsão: </label>
             <div id="latlog-form">
-                <input type="text" class="latlong-form coordenadas" id="coordenadas_Latitude" placeholder="Latitude">
-                <input type="text" class="latlong-form coordenadas" id="coordenadas_Longitude" placeholder="Longitude">
+                <input type="text" class="form-control coordenadas" id="coordenadas_Latitude" placeholder="Latitude">
+                <input type="text" class="form-control coordenadas" id="coordenadas_Longitude" placeholder="Longitude">
             </div>
          </div>
+         <button type="submit" class="btn btn-primary btn-block" id="busca"> Acessar </button>
       </form>
-      <button type="submit"> Acessar </button>
    </div>
 
-    <!-- Seção de Resultado da busca por CEP -->
-    <div class="introducao">
-      <div class="buscacep_texto">
-          <p> Resultado da busca por CEP: </p>
+    <!-- SESSAO DE RESULTADO BUSCA CEP -->
+    <div class="topo_cep">
+      <div class="txt_topo2">
+          <h1> Resultado da busca por CEP: </h1>
       </div>
-      <div class="buscacep_imagem">
-          <img src="/img/localizacao.svg" width=50% height=70% alt="">
+      <div class="img_topo2">
+          <img src="/img/localizacao.svg" width="65%" height="70%">
       </div>
   </div>
   
-  <div class="resultados">
-      <div class="buscacepsuperior">
-          <div class="buscaInterno"> Logradouro / Nome </div>
-          <div class="buscaInterno"> Bairro/Distrito </div>
-          <div class="buscaInterno"> Localidade/UF </div>
+  <div class="resultado_cep">
+      <div class="buscacep_up">
+          <div class="ret-buscacep"> Logradouro / Nome </div>
+          <div class="ret-buscacep"> Bairro/Distrito </div>
+          <div class="ret-buscacep"> Localidade/UF </div>
       </div>
-      <div class="buscacepinferior">
-          <div class="buscaInterno"> <span id="logradouro"> Justino Cobra </span></div>
-          <div class="buscaInterno"> <span id="bairro"> Vila Ema </span></div>
-          <div class="buscaInterno"> <span id="estado"> SP </span></div>
+      <div class="buscacep_down">
+          <div class="ret-buscacep"> <span id="logradouro"> Rodrigo Trescato </span></div>
+          <div class="ret-buscacep"> <span id="bairro"> Vila Indepa </span></div>
+          <div class="ret-buscacep"> <span id="estado"> SP </span></div>
       </div>
   </div>
 
-  <!-- Seção da busca por CEP -->
-  <div class="introducao">
-      <div class="buscacep_texto">
-          <p> Previsão do tempo na região: </p>
+    <!-- SESSAO DE RESULTADO PREVISAO DO TEMPO -->
+  <div class="topo_cep">
+      <div class="txt_topo2">
+          <h1> Previsão do tempo na região: </h1>
       </div>
-      <div class="buscacep_imagem">
+      <div class="img_topo2">
           <img src="/img/nuvem2.svg" width=50% height=70% alt="">
       </div>
   </div>
-  <div class="resultados">
+  <div class="resultado_cep">
       <p class="resultadotempopesquisa" ><span id="tempLocal"> Previsão de tempo de acordo com a região: --° C </span></p>
   </div>
 
   <footer>
-      <a class="textofooter"> Termos de Uso </a>
-      <a class="separator"> | </a>
-      <a class="textofooter"> Política de Privacidade </a>
+      <a id="textofooter"> Termos de Uso </a>
+      <a id="separator"> | </a>
+      <a id="textofooter"> Política de Privacidade </a>
   </footer>
-
 </body>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>-->
 
-   <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 
 </html>
